@@ -22,9 +22,21 @@ class Home extends React.Component {
         })
     }
 
+    handleClickLinear = () => {
+        this.setState({
+            type: 'linear-gradient'
+        })
+    }
+
+    handleClickRadical = () => {
+        this.setState({
+            type: 'radial-gradient'
+        })
+    }
+
     render() {
         const { type, angle, color1, color2 } = this.state;
-        const gradient = `${type}(${angle}deg, ${color1}, ${color2})`;
+        const gradient = `${type}(${type === 'linear-gradient' ? angle + 'deg, ' : ''}${color1}, ${color2})`;
         return (
             <div style={{ backgroundImage: gradient, height: '900px' }}>
                 <div className='option color-picker color-picker-1'>
@@ -38,6 +50,10 @@ class Home extends React.Component {
                         color={color2}
                         onChange={(color) => this.handleChangeColor('color2', color)}
                     />
+                </div>
+                <div className='option button-group'>
+                    <button className='button' onClick={this.handleClickRadical}>Radial</button>
+                    <button className='button' onClick={this.handleClickLinear}>Linear</button>
                 </div>
                 <div className='option range-slider'>
                     <input
