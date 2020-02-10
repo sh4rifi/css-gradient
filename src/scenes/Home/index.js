@@ -10,13 +10,13 @@ class Home extends React.Component {
         color2: 'blue',
     };
 
-    handleClick = (type, value) => {
+    handleChangeColor = (type, value) => {
         this.setState({
             [type]: value.hex
         })
     }
 
-    handleChange = (type, event) => {
+    handleChangeRange = (type, event) => {
         this.setState({
             [type]: event.target.value
         })
@@ -30,13 +30,13 @@ class Home extends React.Component {
                 <div className='option color-picker color-picker-1'>
                     <ChromePicker
                         color={color1}
-                        onChange={(color) => this.handleClick('color1', color)}
+                        onChange={(color) => this.handleChangeColor('color1', color)}
                     />
                 </div>
                 <div className='option color-picker color-picker-2'>
                     <ChromePicker
                         color={color2}
-                        onChange={(color) => this.handleClick('color2', color)}
+                        onChange={(color) => this.handleChangeColor('color2', color)}
                     />
                 </div>
                 <div className='option range-slider'>
@@ -46,7 +46,7 @@ class Home extends React.Component {
                         step="1"
                         type="range"
                         value={angle}
-                        onChange={(event) => this.handleChange('angle', event)}
+                        onChange={(event) => this.handleChangeRange('angle', event)}
                     />
                 </div>
                 <div className='output'>
