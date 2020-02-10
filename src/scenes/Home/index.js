@@ -55,7 +55,8 @@ class Home extends React.Component {
                     <button className='button' onClick={this.handleClickRadical}>Radial</button>
                     <button className='button' onClick={this.handleClickLinear}>Linear</button>
                 </div>
-                <div className='option range-slider'>
+                {type === 'linear-gradient' ? (
+                    <div className='option range-slider'>
                     <input
                         min="-180"
                         max="180"
@@ -65,6 +66,7 @@ class Home extends React.Component {
                         onChange={(event) => this.handleChangeRange('angle', event)}
                     />
                 </div>
+                ) : null}
                 <div className='output'>
                     background-image: {gradient}
                 </div>
