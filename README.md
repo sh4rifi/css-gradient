@@ -2,7 +2,7 @@
 
 # css-gradient
 
-A free CSS gradient generator tool, also this website lets you create a colorful gradient animation background.
+A free CSS gradient generator tool, also this website lets you create a colorful gradient background animation.
 
 [Demo Link is here...](http://repo.afracode.com/css-gradient/)
 
