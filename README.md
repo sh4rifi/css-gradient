@@ -1,8 +1,10 @@
 # css-gradient
 
 ![alt text](http://repo.afracode.com/css-gradient/demo.png "CSS Gradient Demo")
+
 A free CSS gradient generator tool, also this website lets you create a colorful gradient animation background.
-[Demo](http://repo.afracode.com/css-gradient/)
+
+[Demo Link is hear...](http://repo.afracode.com/css-gradient/)
 
 ## Quick start
 
