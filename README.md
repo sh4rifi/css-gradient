@@ -4,7 +4,7 @@
 
 A free CSS gradient generator tool, also this website lets you create a colorful gradient animation background.
 
-[Demo Link is hear...](http://repo.afracode.com/css-gradient/)
+[Demo Link is here...](http://repo.afracode.com/css-gradient/)
 
 ## Quick start
 
